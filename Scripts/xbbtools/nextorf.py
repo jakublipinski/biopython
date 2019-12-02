@@ -178,9 +178,7 @@ class NextOrf(object):
                 elif codon_type == STOP:
                     if start_site == 0:
                         continue
-                    #                    if codon == 'XXX': print('do something')
                     stop = pos + 2
-                    #                    print("stop")
                     length = stop - start_site + 1
                     if length >= minlength and length <= maxlength:
                         if nostart == "1" and start_site == 1:
